@@ -1,0 +1,50 @@
+<div class="container w-25 bg-white p-4 border custom-shadow rounded-4" style="margin-top: 200px;">
+  <form [formGroup]="registrationForm" (ngSubmit)="signUp()">
+
+    <!-- name  -->
+    <div class="input-group flex-nowrap has-validation">
+      <input type="text" class="form-control" placeholder="Full Name" formControlName="name"
+        aria-label="Username" aria-describedby="addon-wrapping" [ngClass]="{'is-valid' : name?.valid && name?.touched, 'is-invalid' : name?.invalid && name?.touched}">
+    </div>
+    <div class="row" *ngIf="name?.touched && name?.invalid">
+      <div class="invalid-feedback d-block" *ngIf="name?.errors?.['required']">This field is required</div>
+    </div>
+
+
+    <!-- username  -->
+    <div class="input-group flex-nowrap has-validation mt-4">
+      <input type="text" class="form-control" placeholder="Username" formControlName="userName"
+        aria-label="Username" aria-describedby="addon-wrapping" [ngClass]="{'is-valid' : userName?.valid && userName?.touched, 'is-invalid' : userName?.invalid && userName?.touched}">
+    </div>
+
+    <div class="row" *ngIf="userName?.touched && userName?.invalid">
+      <div class="invalid-feedback d-block" *ngIf="userName?.errors?.['required']">This field is required</div>
+    </div>
+
+    <!-- password  -->
+    <div class="input-group flex-nowrap mt-4 has-validation">
+      <input type="text" class="form-control" placeholder="Password" formControlName="password"
+        aria-label="Password" aria-describedby="addon-wrapping" [ngClass]="{'is-valid' : password?.valid && password?.touched, 'is-invalid' : password?.invalid && password?.touched}">
+    </div>
+
+    <div class="row" *ngIf="password?.touched && password?.invalid">
+      <div class="invalid-feedback d-block" *ngIf="password?.errors?.['required']">This field is required</div>
+    </div>
+
+    <div class="d-grid gap-2 my-4" *ngIf="selectedId == null">
+      <button class="btn btn-dark" type="submit" [disabled]="registrationForm.pristine">Signup</button>
+    </div>
+
+    <div class="d-grid gap-2 my-4" *ngIf="selectedId">
+      <button class="btn btn-primary" type="submit" [disabled]="registrationForm.invalid">Update</button>
+    </div>
+
+
+
+  </form>
+
+  <div *ngIf="selectedId == null">
+    <p class="mb-0 mt-3">Already have account? &nbsp; <a class="text-primary cursor" routerLink="/login">Login</a></p>
+  </div>
+
+</div>

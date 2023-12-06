@@ -1,0 +1,38 @@
+.icon{
+  height: 40px;
+  padding: 8px 0 0 0;
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.icon:hover{
+  background-color: black;
+  color: white;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.logout:hover{
+  background-color: rgb(99, 232, 255);
+  color: rgb(8, 7, 7);
+  border-radius: 10%;
+}
+.user{
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
+table {
+  width: 100%;
+}
+.mat-mdc-row:hover .mat-mdc-cell {
+  background-color: aliceblue
+}
+
+th{
+  font-weight: bold;
+  font-size: 15px;
+}

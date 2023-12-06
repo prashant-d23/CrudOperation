@@ -1,0 +1,47 @@
+<div class="container mt-3" style="height: 200px;">
+  <div class="alert alert-success w-25 container" role="alert" *ngIf="isValid">
+    <strong>Login Success!</strong>
+  </div>
+  <div class="alert alert-danger w-25 container" role="alert" *ngIf="isNotValid">
+    <strong>Login Failed!</strong>
+  </div>
+</div>
+
+
+<div class="container w-25 p-4 border bg-white rounded-4 custom-shadow">
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+    <!-- username  -->
+    <div class="input-group flex-nowrap has-validation">
+      <span class="input-group-text" id="addon-wrapping"><i class="fas fa-user"></i></span>
+      <input type="text" class="form-control" placeholder="Username" formControlName="userName"
+        aria-label="Username" aria-describedby="addon-wrapping" [ngClass]="{'is-valid' : userName?.valid && userName?.touched, 'is-invalid' : userName?.invalid && userName?.touched}">
+    </div>
+
+    <div class="row" *ngIf="userName?.touched && userName?.invalid">
+      <div class="invalid-feedback d-block" *ngIf="userName?.errors?.['required']">This field is required</div>
+    </div>
+
+    <!-- password  -->
+    <div class="input-group flex-nowrap mt-4 has-validation">
+      <span class="input-group-text" id="addon-wrapping"><i class="fas fa-lock"></i></span>
+      <input type="text" class="form-control" placeholder="Password" formControlName="password"
+        aria-label="Password" aria-describedby="addon-wrapping" [ngClass]="{'is-valid' : password?.valid && password?.touched, 'is-invalid' : password?.invalid && password?.touched}">
+    </div>
+
+    <div class="row" *ngIf="password?.touched && password?.invalid">
+      <div class="invalid-feedback d-block" *ngIf="password?.errors?.['required']">This field is required</div>
+    </div>
+
+    <div class="d-grid gap-2 my-4">
+      <button class="btn btn-dark" type="submit" [disabled]="loginForm.invalid">Login</button>
+    </div>
+
+  </form>
+
+  <div>
+    <p class="mb-0 mt-3">Don't have an account? &nbsp; <a class="text-primary cursor" routerLink="/register">Signup</a></p>
+  </div>
+
+</div>

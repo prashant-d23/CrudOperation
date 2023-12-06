@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "name": "Prashant Deshpande",
+      "userName": "prash",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "John Smith",
+      "userName": "john",
+      "password": "password123",
+      "id": 2
+    },
+    {
+      "name": "Alice Johnson",
+      "userName": "alice",
+      "password": "qwerty",
+      "id": 3
+    },
+    {
+      "name": "Michael Brown",
+      "userName": "michael",
+      "password": "brownie",
+      "id": 4
+    },
+    {
+      "name": "Emily Davis",
+      "userName": "emily",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "Robert Wilson",
+      "userName": "robert",
+      "password": "hello123",
+      "id": 6
+    },
+    {
+      "name": "Jessica Martinez",
+      "userName": "jessica",
+      "password": "welcome",
+      "id": 7
+    },
+    {
+      "name": "Daniel Taylor",
+      "userName": "daniel",
+      "password": "taylor456",
+      "id": 8
+    },
+    {
+      "name": "Sophia Lee",
+      "userName": "sophia",
+      "password": "lee123",
+      "id": 9
+    },
+    {
+      "name": "David Miller",
+      "userName": "david",
+      "password": "miller789",
+      "id": 10
+    },
+    {
+      "name": "Olivia Anderson",
+      "userName": "olivia",
+      "password": "anderson",
+      "id": 11
+    },
+    {
+      "name": "James Harris",
+      "userName": "james",
+      "password": "harris12",
+      "id": 12
+    },
+    {
+      "name": "Ava Martin",
+      "userName": "ava",
+      "password": "martin34",
+      "id": 13
+    },
+    {
+      "name": "William Clark",
+      "userName": "william",
+      "password": "clark567",
+      "id": 14
+    },
+    {
+      "name": "Mia Lewis",
+      "userName": "mia",
+      "password": "lewis890",
+      "id": 15
+    },
+    {
+      "name": "Ethan Hall",
+      "userName": "ethan",
+      "password": "hall1234",
+      "id": 16
+    },
+    {
+      "name": "Isabella Turner",
+      "userName": "isabella",
+      "password": "turner567",
+      "id": 17
+    },
+    {
+      "name": "Tom Holland",
+      "userName": "spidey",
+      "password": "peter",
+      "id": 18
+    },
+    {
+      "name": "Sajid Momin",
+      "userName": "sajid123",
+      "password": "sajid1234",
+      "id": 19
+    }
+  ]
+}
